@@ -6,8 +6,20 @@ This project was intended as a starter for react web with firebase.
 > Copy config from [Download Firebase config file or object](https://support.google.com/firebase/answer/7015592)
 
 Change ./src/firebaseConfig.js
+Change ./firebaserc
 
-## 2. Create a document in Cloud Firestore
+## 2. Install NPM packages
+```bash
+npm install --g firebase-tools
+npm install --save firebase reactfire
+```
+## 3. Login and init
+```bash
+firebase login
+firebase init
+```
+
+## 4. Create a document in Cloud Firestore
 
 > If your project doesn't have a Cloud Firestore database instance yet, check out [these instructions](https://firebase.google.com/docs/firestore/quickstart#create) to create a new instance. Please initialize it in _locked mode_.
 
@@ -39,7 +51,14 @@ Change ./src/firebaseConfig.js
 
    2. _Publish_ the rules.
 
-
+## 4. Deploy
+```bash
+firebase deploy
+```
+or
+```bash
+npm run deploy
+```
 
 ## Guides/Sources
 https://www.geeksforgeeks.org/how-to-deploy-react-project-on-firebase/
