@@ -11,7 +11,6 @@ Change ./firebaserc
 ## 2. Install NPM packages
 ```bash
 npm install --g firebase-tools
-npm install --save firebase reactfire
 ```
 ## 3. Login and init
 ```bash
